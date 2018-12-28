@@ -1,7 +1,7 @@
 @extends('layout')
 @section('title','job')
 @section('main')
-<form method="POST" action="/jobl" enctype="multipart/form-data">
+<form method="POST" action="/job" enctype="multipart/form-data">
         {{csrf_field()}}
             JobName: <input type="text" name="Jobname"><br>
             JobLocation: <input type="text" name="Joblocation"><br>

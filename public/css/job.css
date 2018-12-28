@@ -7,6 +7,11 @@ body {
 	background: orange;
 }
 
+.ml-auto .dropdown-menu {
+  left: auto !important;
+  right: 0px;
+}
+
 .modal {
   display: none;
   position: fixed;
@@ -42,3 +47,4 @@ body {
   text-decoration: none;
   cursor: pointer;
 }
+

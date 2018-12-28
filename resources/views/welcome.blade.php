@@ -1,7 +1,9 @@
 @extends('layout')
-@section('title','home')
+@section('title')
 @section('main')
-        <h3>Home</h3>
-        <br>
-        Welcome!
+<html lang="en">
+    <body>
+        <h3>SITE UNDER CONSTRUCTION</h3>
+    </body>
+</html>
 @endsection

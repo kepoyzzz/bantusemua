@@ -27,7 +27,7 @@ class jobController extends Controller
 
     public function search(Request $request){
             $search = $request->get('jobname');
-            $result = Job::where('jobname', 'LIKE', '%'.$search.'%')->paginate(3);
+            $result = Job::where('jobname', 'LIKE', '%'.$search.'%')->paginate(10);
             $result->appends($request->only('jobname'));
             return view('viewjob', compact('result'));
      }    

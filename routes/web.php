@@ -22,6 +22,8 @@ Route::post('/registerAdmin', 'adminController@register');
 Route::post('/loginAdmin', 'adminController@login');
 
 Route::post('/job','jobController@insert');
-Route::view('/job','job'); 
-Route::view('/', 'layout');
+Route::view('/job','job');
+Route::view('/', 'welcome');
 Route::get('/showjob', 'jobController@search');
+
+Route::view('/profileUser', 'profileUser');
