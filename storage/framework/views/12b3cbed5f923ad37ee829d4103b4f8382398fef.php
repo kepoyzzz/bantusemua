@@ -31,11 +31,17 @@
                     <a class="dropdown-item" href="/job">Add Job</a>
                 </div>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Forum</a>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Donations
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="/viewdonation" id="showjob">View Donations</a>
+                    <a class="dropdown-item" href="/insertdonation">Add Donation</a>
+                </div>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Donation</a>
+                <a class="nav-link" href="#">Forum</a>
             </li>
         </ul>
         <ul class="navbar-nav ml-auto">
@@ -43,7 +49,7 @@
                 <a class="nav-link" href="/profileUser">Hello, dummy</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">log out</a>
+                <a class="nav-link" href="/login">log out</a>
             </li>
         </ul>
     </div>

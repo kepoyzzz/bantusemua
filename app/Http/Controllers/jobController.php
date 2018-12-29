@@ -10,14 +10,17 @@ use App\Job;
 class jobController extends Controller
 {
     public function insert(Request $request){
-        $jname = $request->input('Jobname');
-        $jlocation = $request->input('Joblocation');
-        $jspecification = $request->input('Jobspecification');
-        $jgiver = $request->input('Jobgiver');
-        $time = Carbon::now()->toDateTimeString();
-
-        echo DB::insert('insert into jobs(id, jobname, joblocation, jobspecification, jobgiver,created_at) values (?, ?, ?, ?, ?, ?)', 
-        [null, $jname, $jlocation, $jspecification, $jgiver, $time]);
+        $jpict = $request->JobPict;
+        $jpict->move('jobpictures',$jpict->getClientOriginalName());
+        
+        $jobs = new Job();
+        $jobs->JobName = $request->input('Jobname');
+        $jobs->JobLocation = $request->input('Joblocation');
+        $jobs->JobSpecification = $request->input('Jobspecification');
+        $jobs->JobGiver = $request->input('Jobgiver');
+        $jobs->JobPicture = $jpict->getClientOriginalName();
+        
+        $jobs->save();
     }
 
     public function getAll(){
@@ -26,9 +29,9 @@ class jobController extends Controller
     }
 
     public function search(Request $request){
-            $search = $request->get('jobname');
-            $result = Job::where('jobname', 'LIKE', '%'.$search.'%')->paginate(10);
-            $result->appends($request->only('jobname'));
+            $search = $request->get('Jobname');
+            $result = Job::where('Jobname', 'LIKE', '%'.$search.'%')->paginate(10);
+            $result->appends($request->only('Jobname'));
             return view('viewjob', compact('result'));
      }    
 }

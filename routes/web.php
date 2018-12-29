@@ -27,3 +27,7 @@ Route::view('/', 'welcome');
 Route::get('/showjob', 'jobController@search');
 
 Route::view('/profileUser', 'profileUser');
+
+Route::view('/insertdonation', 'insertdonation');
+Route::post('/insertdonation','donationController@insert');
+Route::get('/viewdonation', 'donationController@searching');

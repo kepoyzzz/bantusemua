@@ -1,0 +1,35 @@
+#centering{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+
+#centering #kotak{
+    width: 500px;
+    height: 600px;
+    border-style: solid;
+    border-color: white;
+    box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
+    padding: 15px;
+    background-color: white;
+    overflow: scroll;
+}
+
+.border{
+    border: blue
+}
+
+body{
+    background-color: blue;
+}
+
+.logo{
+    height: 100px;
+    width: 100px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    display: block;
+}

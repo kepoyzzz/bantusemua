@@ -18,6 +18,7 @@ class UserSeeder extends Seeder
             'location' => 'Jelambar',
             'gender' => 'Female',
             'email' => 'natalia@gmail.com',
+            'profilepicture' => 'user-default.jpg',
             'phonenumber' => '081254676834',
             'password' => 'hello',
             'created_at' => Carbon::now()->toDateTimeString()
@@ -29,6 +30,7 @@ class UserSeeder extends Seeder
             'location' => 'Bekasi',
             'gender' => 'Male',
             'email' => 'ivan@gmail.com',
+            'profilepicture' => 'user-default.jpg',
             'phonenumber' => '08781234567',
             'password' => 'hello',
             'created_at' => Carbon::now()->toDateTimeString()
@@ -39,6 +41,7 @@ class UserSeeder extends Seeder
             'location' => 'Bogor',
             'gender' => 'Female',
             'email' => 'alexandra@gmail.com',
+            'profilepicture' => 'user-default.jpg',
             'phonenumber' => '081298535620',
             'password' => 'hello',
             'created_at' => Carbon::now()->toDateTimeString()
@@ -49,6 +52,7 @@ class UserSeeder extends Seeder
             'location' => 'Jakarta Pusat',
             'gender' => 'Male',
             'email' => 'kevin@gmail.com',
+            'profilepicture' => 'user-default.jpg',
             'phonenumber' => '0898349586',
             'password' => 'hello',
             'created_at' => Carbon::now()->toDateTimeString()
@@ -60,6 +64,7 @@ class UserSeeder extends Seeder
             'location' => 'Pluit',
             'gender' => 'Female',
             'email' => 'yvonne@gmail.com',
+            'profilepicture' => 'user-default.jpg',
             'phonenumber' => '081267883742',
             'password' => 'hello',
             'created_at' => Carbon::now()->toDateTimeString()

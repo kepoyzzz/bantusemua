@@ -6,7 +6,8 @@
             JobName: <input type="text" name="Jobname"><br>
             JobLocation: <input type="text" name="Joblocation"><br>
             JobSpecification: <input type="text" name="Jobspecification"><br>
-            JobGiver: <input type="text" name="Jobgiver"><br>        
+            JobGiver: <input type="text" name="Jobgiver"><br> 
+            JobPicture:<input type = "file" name="JobPict"><br>       
             <button type="submit" name="button">Submit</button>
 </form>
 <?php $__env->stopSection(); ?>

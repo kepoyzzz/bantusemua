@@ -17,6 +17,7 @@ class JobsSeeder extends Seeder
             'JobLocation' => 'Bekasi',
             'JobSpecification' => 'Mengajar dan bermain bersama anak-anak',
             'JobGiver' => 'Budi',
+            'JobPicture' => '1.jpg',
             'created_at' => Carbon::now()->toDateTimeString()
         ]);
         
@@ -25,6 +26,7 @@ class JobsSeeder extends Seeder
             'JobLocation' => 'YOGYAKARTA',
             'JobSpecification' => 'Inkubator gerakan sosial di bidang Politik, Sosial, Pendidikan, Kesehatan, dan Lingkungan.',
             'JobGiver' => 'Santi',
+            'JobPicture' => '2.jpg',
             'created_at' => Carbon::now()->toDateTimeString()
         ]);
         DB::table('jobs')->insert([
@@ -32,6 +34,7 @@ class JobsSeeder extends Seeder
             'JobLocation' => 'Jl. Latuharhari 4B Menteng, Jakarta 10310',
             'JobSpecification' => 'Menerima, merujuk, dan mendokumentasikan kasus-kasus individu yang dilaporkan ke Komnas Perempuan.',
             'JobGiver' => 'Lisa',
+            'JobPicture' => '3.jpg',
             'created_at' => Carbon::now()->toDateTimeString()
         ]);
         DB::table('jobs')->insert([
@@ -39,6 +42,7 @@ class JobsSeeder extends Seeder
             'JobLocation' => 'Tanggerang',
             'JobSpecification' => 'Menangani perdagangan orang dan eksploitasi seksual anak',
             'JobGiver' => 'Rudi',
+            'JobPicture' => '4.jpg',
             'created_at' => Carbon::now()->toDateTimeString()
         ]);
 
@@ -47,6 +51,7 @@ class JobsSeeder extends Seeder
             'JobLocation' => 'Blok M Plaza, Jakarta',
             'JobSpecification' => 'Permberdayaan dan pengembangan pemuda di berbagai bidang',
             'JobGiver' => 'Tantri',
+            'JobPicture' => '5.jpg',
             'created_at' => Carbon::now()->toDateTimeString()
         ]);
 
@@ -55,6 +60,7 @@ class JobsSeeder extends Seeder
             'JobLocation' => 'Jabodetabek',
             'JobSpecification' => 'Penyebarluasan informasi tentang bahaya HIV & Aids',
             'JobGiver' => 'Sita',
+            'JobPicture' => '6.jpg',
             'created_at' => Carbon::now()->toDateTimeString()
         ]);
 
@@ -63,6 +69,7 @@ class JobsSeeder extends Seeder
             'JobLocation' => 'JCC Senayan',
             'JobSpecification' => 'mendukung berbagai aktivitas lintas komunitas yang dinamis di berbagai bidang misalnya hobi, visi, bahkan profesi.',
             'JobGiver' => 'Anto',
+            'JobPicture' => '7.jpg',
             'created_at' => Carbon::now()->toDateTimeString()
         ]);
 
@@ -71,6 +78,7 @@ class JobsSeeder extends Seeder
             'JobLocation' => 'Sulawesi',
             'JobSpecification' => 'Menjaga Penyu Laut',
             'JobGiver' => 'Tony',
+            'JobPicture' => '8.jpg',
             'created_at' => Carbon::now()->toDateTimeString()
         ]);
 
@@ -79,6 +87,7 @@ class JobsSeeder extends Seeder
             'JobLocation' => 'Kalimantan',
             'JobSpecification' => 'Menjaga kalimantan rainforest',
             'JobGiver' => 'Siska',
+            'JobPicture' => '9.jpg',
             'created_at' => Carbon::now()->toDateTimeString()
         ]);
 
@@ -87,6 +96,7 @@ class JobsSeeder extends Seeder
             'JobLocation' => 'Depends on Location',
             'JobSpecification' => 'Disaster planning and community improvement',
             'JobGiver' => 'Robert',
+            'JobPicture' => '10.jpg',
             'created_at' => Carbon::now()->toDateTimeString()
         ]);
     }

@@ -4,15 +4,15 @@
   <body>
     <div class="jumbotron">
       <div class="container text-center">
-        <h1>Job List</h1>      
-        <p>Get your job here</p>
+        <h1>Donation</h1>      
+        <p>Your Help Will Help Many People</p>
       </div>
       <form action="/showjob" method="get">
         <div class="form-row">
           <div class="col-2">
           </div>
           <div class="col-7">
-            <input type="text" class="form-control" name="Jobname" placeholder="Search ...">
+            <input type="text" class="form-control" name="jobname" placeholder="Search ...">
           </div>
           <div class="col-2">
             <button type="submit" class="btn btn-dark">Find</button>
@@ -26,8 +26,8 @@
       <?php $__currentLoopData = $result; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $jobs): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?> 
         <div class="col-sm-4">
           <div class="panel panel-primary">
-            <div class="panel-heading"><h5><?php echo e($jobs->JobName); ?></h5></div>
-            <div class="panel-body"><img src="images/jobpictures/<?php echo e($jobs->JobPicture); ?>" class="img-responsive" style="width:100%" alt="Image"></div>
+            <div class="panel-heading"><h5><?php echo e($jobs->jobname); ?></h5></div>
+            <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
             <div class="panel-footer">
               <div class="table-responsive-md">
                 <table class="table">
@@ -36,7 +36,7 @@
                       Person in Charge: 
                     </td>
                     <td>
-                    <?php echo e($jobs->JobGiver); ?>
+                    <?php echo e($jobs->jobgiver); ?>
 
                     </td>
                   </tr>
@@ -45,7 +45,7 @@
                       Location: 
                     </td>
                     <td>
-                    <?php echo e($jobs->JobLocation); ?>
+                      <?php echo e($jobs->joblocation); ?>
 
                     </td>
                   </tr>
@@ -54,7 +54,7 @@
                       Description:
                     </td>  
                     <td>
-                    <?php echo e($jobs->JobSpecification); ?>
+                      <?php echo e($jobs->jobspecification); ?>
 
                     </td>
                   </tr>
