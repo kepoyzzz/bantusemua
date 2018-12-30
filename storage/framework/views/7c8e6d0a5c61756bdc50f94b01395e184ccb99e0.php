@@ -45,8 +45,7 @@
                       Total Donation : 
                     </td>
                     <td>
-                      <?php echo e($donations->totalDonation); ?>
-
+                      Rp. <?php echo e($donations->totalDonation); ?>,00
                     </td>
                   </tr>
                   <tr>
@@ -54,8 +53,7 @@
                       Target Donation :
                     </td>
                     <td>
-                      <?php echo e($donations->targetDonation); ?>
-
+                      Rp. <?php echo e($donations->targetDonation); ?>,00
                     </td>
                   </tr>
                   <tr>

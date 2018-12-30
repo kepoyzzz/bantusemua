@@ -45,7 +45,7 @@
                       Total Donation : 
                     </td>
                     <td>
-                      {{$donations->totalDonation}}
+                      Rp. {{$donations->totalDonation}},00
                     </td>
                   </tr>
                   <tr>
@@ -53,7 +53,7 @@
                       Target Donation :
                     </td>
                     <td>
-                      {{$donations->targetDonation}}
+                      Rp. {{$donations->targetDonation}},00
                     </td>
                   </tr>
                   <tr>

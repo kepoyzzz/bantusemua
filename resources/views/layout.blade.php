@@ -45,11 +45,15 @@
             </li>
         </ul>
         <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="/profileUser">Hello, dummy</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/login">Log Out</a>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Hello, dummy
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="/viewdonation" id="showjob">View Applied Donations</a>
+                    <a class="dropdown-item" href="/showjob" id="showjob">View Applied Jobs</a>
+                    <a class="dropdown-item" href="#">Log Out</a>
+                </div>
             </li>
         </ul>
     </div>
