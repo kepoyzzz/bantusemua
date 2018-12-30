@@ -28,7 +28,7 @@
         <div class="col-sm-4">
           <div class="panel panel-primary">
             <div class="panel-heading"><h5>{{$jobs->JobName}}</h5></div>
-            <div class="panel-body"><img src="images/jobpictures/{{$jobs->JobPicture}}" class="img-responsive" style="width:100%" alt="Image"></div>
+            <div class="panel-body"><img src="jobpictures/{{$jobs->JobPicture}}" class="img-responsive" style="width:100%" alt="Image"></div>
             <div class="panel-footer">
               <div class="table-responsive-md">
                 <table class="table">
@@ -63,8 +63,8 @@
         </div>
         @endforeach
       </div>
+      {{$result->render()}}
     </div>
-    {{$result->render()}}
   </body>
 </html>
 @endsection

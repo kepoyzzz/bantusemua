@@ -30,8 +30,12 @@
                 <label for="Input Your Picture">Input Picture</label>
                 <input type="file" class="form-control-file" name="JobPict">
             </div>    
-            <button type="submit" name="button" class="btn btn-primary">Submit</button>
+            <button type="submit" name="button" class="btn btn-primary" onclick="myFunction()">Submit</button>
     </form>
 </div>
-
+<script>
+function myFunction() {
+  alert("Job Added Successfully");
+}
+</script>
 @endsection

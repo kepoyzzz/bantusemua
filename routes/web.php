@@ -22,12 +22,14 @@ Route::post('/registerAdmin', 'adminController@register');
 Route::post('/loginAdmin', 'adminController@login');
 
 Route::post('/job','jobController@insert');
-Route::view('/job','job');
+Route::view('/job','job'); 
+Route::view('/viewjob','viewjob');
 Route::view('/', 'welcome');
 Route::get('/showjob', 'jobController@search');
 
 Route::view('/profileUser', 'profileUser');
 
 Route::view('/insertdonation', 'insertdonation');
+Route::view('/viewdonation','viewdonation');
 Route::post('/insertdonation','donationController@insert');
 Route::get('/viewdonation', 'donationController@searching');

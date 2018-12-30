@@ -27,7 +27,7 @@
         <div class="col-sm-4">
           <div class="panel panel-primary">
             <div class="panel-heading"><h5><?php echo e($jobs->JobName); ?></h5></div>
-            <div class="panel-body"><img src="images/jobpictures/<?php echo e($jobs->JobPicture); ?>" class="img-responsive" style="width:100%" alt="Image"></div>
+            <div class="panel-body"><img src="jobpictures/<?php echo e($jobs->JobPicture); ?>" class="img-responsive" style="width:100%" alt="Image"></div>
             <div class="panel-footer">
               <div class="table-responsive-md">
                 <table class="table">
@@ -65,9 +65,9 @@
         </div>
         <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
       </div>
-    </div>
-    <?php echo e($result->render()); ?>
+      <?php echo e($result->render()); ?>
 
+    </div>
   </body>
 </html>
 <?php $__env->stopSection(); ?>

@@ -21,6 +21,7 @@ class jobController extends Controller
         $jobs->JobPicture = $jpict->getClientOriginalName();
         
         $jobs->save();
+        return view('job');
     }
 
     public function getAll(){
@@ -30,7 +31,7 @@ class jobController extends Controller
 
     public function search(Request $request){
             $search = $request->get('Jobname');
-            $result = Job::where('Jobname', 'LIKE', '%'.$search.'%')->paginate(10);
+            $result = Job::where('Jobname', 'LIKE', '%'.$search.'%')->paginate(12);
             $result->appends($request->only('Jobname'));
             return view('viewjob', compact('result'));
      }    

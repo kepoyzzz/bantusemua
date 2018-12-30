@@ -24,6 +24,7 @@ class donationController extends Controller
         $donations->descriptionDonation = $request->input('DonDesc');
        
         $donations->save();
+        return view('insertdonation');
     }
 
     public function getAll(){
@@ -33,7 +34,7 @@ class donationController extends Controller
 
     public function searching(Request $request){
             $search = $request->get('donateTitle');
-            $result = Donation::where('donateTitle', 'LIKE', '%'.$search.'%')->paginate(10);
+            $result = Donation::where('donateTitle', 'LIKE', '%'.$search.'%')->paginate(12);
             $result->appends($request->only('donateTitle'));
             return view('viewdonation', compact('result'));
      }    

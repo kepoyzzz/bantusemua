@@ -34,7 +34,7 @@ class JobsSeeder extends Seeder
             'JobLocation' => 'Jl. Latuharhari 4B Menteng, Jakarta 10310',
             'JobSpecification' => 'Menerima, merujuk, dan mendokumentasikan kasus-kasus individu yang dilaporkan ke Komnas Perempuan.',
             'JobGiver' => 'Lisa',
-            'JobPicture' => '3.jpg',
+            'JobPicture' => '3.png',
             'created_at' => Carbon::now()->toDateTimeString()
         ]);
         DB::table('jobs')->insert([
@@ -51,7 +51,7 @@ class JobsSeeder extends Seeder
             'JobLocation' => 'Blok M Plaza, Jakarta',
             'JobSpecification' => 'Permberdayaan dan pengembangan pemuda di berbagai bidang',
             'JobGiver' => 'Tantri',
-            'JobPicture' => '5.jpg',
+            'JobPicture' => '5.png',
             'created_at' => Carbon::now()->toDateTimeString()
         ]);
 
@@ -87,7 +87,7 @@ class JobsSeeder extends Seeder
             'JobLocation' => 'Kalimantan',
             'JobSpecification' => 'Menjaga kalimantan rainforest',
             'JobGiver' => 'Siska',
-            'JobPicture' => '9.jpg',
+            'JobPicture' => '9.png',
             'created_at' => Carbon::now()->toDateTimeString()
         ]);
 
@@ -96,7 +96,7 @@ class JobsSeeder extends Seeder
             'JobLocation' => 'Depends on Location',
             'JobSpecification' => 'Disaster planning and community improvement',
             'JobGiver' => 'Robert',
-            'JobPicture' => '10.jpg',
+            'JobPicture' => '10.png',
             'created_at' => Carbon::now()->toDateTimeString()
         ]);
     }

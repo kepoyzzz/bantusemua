@@ -16,37 +16,36 @@
             </div>
             <div class="form-group">
                 <label for="Person In Charge">Requester</label> 
-                <input type="text" class="form-control" name="Jobgiver">
+                <input type="text" class="form-control" name="DonateName">
             </div>
             <div class="form-group">
                 <label for="Job Location">Target Donation</label>
                 <input type="text" class="form-control" name="TargetDon">
             </div>
             <div class="form-group">
-                <label for="Job Location">Job Location</label>
-                <input type="text" class="form-control" name="Joblocation">
+                <label for="Total">Total Donation</label>
+                <label for="Total"></label>
+                <input type="text" class="form-control" name="TotalDon">
             </div>
             <div class="form-group">
                 <label for="DonDesc">Donation Description</label>
                 <textarea name="DonDesc" class="form-control" rows="3"></textarea>
             </div>
             <div class="form-group">
+                <label for="DonDesc">Maximum Donation Collection</label>
+                <input type="date" class="form-control" name="DonTime">
+            </div>
+            <div class="form-group">
                 <label for="Input Your Picture">Input Picture</label>
                 <input type="file" class="form-control-file" name="DonatePict">
             </div>    
-            <button type="submit" name="button" class="btn btn-primary">Submit</button>
+            <button type="submit" name="button" class="btn btn-primary" onclick="myFunction()">Submit</button>
     </form>
 </div>
-<!-- <form method="POST" action="/insertdonation" enctype="multipart/form-data">
-        <?php echo e(csrf_field()); ?>
-
-            donateTitle: <input type="text" name="DonateTitle"><br>
-            requesterDonation: <input type="text" name="DonateName"><br>
-            totalDonation: <input type="text" name="TotalDon"><br> 
-            targetDonation: <input type="text" name="TargetDon"><br>
-            donateTime: <input type="text" name="DonTime"><br>
-            descriptionDonation: <input type="text" name="DonDesc"><br>        
-            <button type="submit" name="button">Submit</button>
-</form> -->
+<script>
+function myFunction() {
+  alert("Hello! I am an alert box!");
+}
+</script>
 <?php $__env->stopSection(); ?>
 <?php echo $__env->make('layout', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

@@ -21,14 +21,13 @@
         </div>
       </form>
     </div>
-     
     <div class="container">
       <div class="row">
       @foreach($result as $donations)
         <div class="col-sm-4">
           <div class="panel panel-primary">
             <div class="panel-heading"><h5>{{$donations->donateTitle}}</h5></div>
-            <div class="panel-body"><img src="images/donasibencana/{{$donations->donatePicture}}" class="img-responsive" style="width:100%" alt="Image"></div>
+            <div class="panel-body"><img src="donasibencana/{{$donations->donatePicture}}" class="img-responsive" style="width:100%" alt="Image"></div>
             <div class="panel-footer">
               <div class="table-responsive-md">
                 <table class="table">
@@ -79,8 +78,8 @@
         </div>
         @endforeach
       </div>
+      {{$result->render()}}
     </div>
-    {{$result->render()}}
   </body>
 </html>
 @endsection

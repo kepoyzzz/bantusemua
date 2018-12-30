@@ -20,14 +20,13 @@
         </div>
       </form>
     </div>
-     
     <div class="container">
       <div class="row">
       <?php $__currentLoopData = $result; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $donations): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
         <div class="col-sm-4">
           <div class="panel panel-primary">
             <div class="panel-heading"><h5><?php echo e($donations->donateTitle); ?></h5></div>
-            <div class="panel-body"><img src="images/donasibencana/<?php echo e($donations->donatePicture); ?>" class="img-responsive" style="width:100%" alt="Image"></div>
+            <div class="panel-body"><img src="donasibencana/<?php echo e($donations->donatePicture); ?>" class="img-responsive" style="width:100%" alt="Image"></div>
             <div class="panel-footer">
               <div class="table-responsive-md">
                 <table class="table">
@@ -81,9 +80,9 @@
         </div>
         <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
       </div>
-    </div>
-    <?php echo e($result->render()); ?>
+      <?php echo e($result->render()); ?>
 
+    </div>
   </body>
 </html>
 <?php $__env->stopSection(); ?>
