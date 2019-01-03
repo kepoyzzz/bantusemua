@@ -3,6 +3,8 @@
 use Illuminate\Database\Seeder;
 use Carbon\carbon;
 
+use Faker\Factory as Faker;
+
 class JobsSeeder extends Seeder
 {
     /**
@@ -12,12 +14,15 @@ class JobsSeeder extends Seeder
      */
     public function run()
     {
+        $faker = Faker::create();
         DB::table('jobs')->insert([
             'JobName' => 'Serambi Inspirasi',
             'JobLocation' => 'Bekasi',
             'JobSpecification' => 'Mengajar dan bermain bersama anak-anak',
             'JobGiver' => 'Budi',
             'JobPicture' => '1.jpg',
+            'JobEmail' => $faker->email,
+            'JobPhone' => $faker->phoneNumber,
             'created_at' => Carbon::now()->toDateTimeString()
         ]);
         
@@ -27,6 +32,8 @@ class JobsSeeder extends Seeder
             'JobSpecification' => 'Inkubator gerakan sosial di bidang Politik, Sosial, Pendidikan, Kesehatan, dan Lingkungan.',
             'JobGiver' => 'Santi',
             'JobPicture' => '2.jpg',
+            'JobEmail' => $faker->email,
+            'JobPhone' => $faker->phoneNumber,
             'created_at' => Carbon::now()->toDateTimeString()
         ]);
         DB::table('jobs')->insert([
@@ -35,6 +42,8 @@ class JobsSeeder extends Seeder
             'JobSpecification' => 'Menerima, merujuk, dan mendokumentasikan kasus-kasus individu yang dilaporkan ke Komnas Perempuan.',
             'JobGiver' => 'Lisa',
             'JobPicture' => '3.png',
+            'JobEmail' => $faker->email,
+            'JobPhone' => $faker->phoneNumber,
             'created_at' => Carbon::now()->toDateTimeString()
         ]);
         DB::table('jobs')->insert([
@@ -43,6 +52,8 @@ class JobsSeeder extends Seeder
             'JobSpecification' => 'Menangani perdagangan orang dan eksploitasi seksual anak',
             'JobGiver' => 'Rudi',
             'JobPicture' => '4.jpg',
+            'JobEmail' => $faker->email,
+            'JobPhone' => $faker->phoneNumber,
             'created_at' => Carbon::now()->toDateTimeString()
         ]);
 
@@ -52,6 +63,8 @@ class JobsSeeder extends Seeder
             'JobSpecification' => 'Permberdayaan dan pengembangan pemuda di berbagai bidang',
             'JobGiver' => 'Tantri',
             'JobPicture' => '5.png',
+            'JobEmail' => $faker->email,
+            'JobPhone' => $faker->phoneNumber,
             'created_at' => Carbon::now()->toDateTimeString()
         ]);
 
@@ -61,6 +74,8 @@ class JobsSeeder extends Seeder
             'JobSpecification' => 'Penyebarluasan informasi tentang bahaya HIV & Aids',
             'JobGiver' => 'Sita',
             'JobPicture' => '6.jpg',
+            'JobEmail' => $faker->email,
+            'JobPhone' => $faker->phoneNumber,
             'created_at' => Carbon::now()->toDateTimeString()
         ]);
 
@@ -70,6 +85,8 @@ class JobsSeeder extends Seeder
             'JobSpecification' => 'mendukung berbagai aktivitas lintas komunitas yang dinamis di berbagai bidang misalnya hobi, visi, bahkan profesi.',
             'JobGiver' => 'Anto',
             'JobPicture' => '7.jpg',
+            'JobEmail' => $faker->email,
+            'JobPhone' => $faker->phoneNumber,
             'created_at' => Carbon::now()->toDateTimeString()
         ]);
 
@@ -79,6 +96,8 @@ class JobsSeeder extends Seeder
             'JobSpecification' => 'Menjaga Penyu Laut',
             'JobGiver' => 'Tony',
             'JobPicture' => '8.jpg',
+            'JobEmail' => $faker->email,
+            'JobPhone' => $faker->phoneNumber,
             'created_at' => Carbon::now()->toDateTimeString()
         ]);
 
@@ -88,6 +107,8 @@ class JobsSeeder extends Seeder
             'JobSpecification' => 'Menjaga kalimantan rainforest',
             'JobGiver' => 'Siska',
             'JobPicture' => '9.png',
+            'JobEmail' => $faker->email,
+            'JobPhone' => $faker->phoneNumber,
             'created_at' => Carbon::now()->toDateTimeString()
         ]);
 
@@ -97,6 +118,8 @@ class JobsSeeder extends Seeder
             'JobSpecification' => 'Disaster planning and community improvement',
             'JobGiver' => 'Robert',
             'JobPicture' => '10.png',
+            'JobEmail' => $faker->email,
+            'JobPhone' => $faker->phoneNumber,
             'created_at' => Carbon::now()->toDateTimeString()
         ]);
     }

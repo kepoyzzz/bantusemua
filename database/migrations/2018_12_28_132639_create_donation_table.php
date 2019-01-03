@@ -18,6 +18,8 @@ class CreateDonationTable extends Migration
             $table->string('donatePicture');
             $table->string('donateTitle');
             $table->string('requesterDonation');
+            $table->string('emailDonation')->unique();
+            $table->string('phoneDonation');
             $table->integer('totalDonation');
             $table->integer('targetDonation');
             $table->date('donateTime');

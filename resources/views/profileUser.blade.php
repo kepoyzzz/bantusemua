@@ -14,7 +14,7 @@
                 <table class="table">
                     <tr>
                         <td>Name : </td>
-                        <td>test</td>
+                        <td>Auth::user()->name</td>
                     </tr>
                     <tr>
                         <td>Date Of Birth : </td>

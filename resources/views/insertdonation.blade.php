@@ -22,11 +22,11 @@
                 <label for="Job Location">Target Donation</label>
                 <input type="text" class="form-control" name="TargetDon">
             </div>
-            <div class="form-group">
+            <!-- <div class="form-group">
                 <label for="Total">Total Donation</label>
                 <label for="Total"></label>
                 <input type="text" class="form-control" name="TotalDon">
-            </div>
+            </div> -->
             <div class="form-group">
                 <label for="DonDesc">Donation Description</label>
                 <textarea name="DonDesc" class="form-control" rows="3"></textarea>

@@ -18,13 +18,15 @@ class donationController extends Controller
         $donations->donatePicture = $dpict->getClientOriginalName();
         $donations->donateTitle = $request->input('DonateTitle');
         $donations->requesterDonation = $request->input('DonateName');
-        $donations->totalDonation = $request->input('TotalDon');
+        $donations->totalDonation = $request->input('TotalDon')->nullable();
         $donations->targetDonation = $request->input('TargetDon');
         $donations->donateTime = $request->input('DonTime');
         $donations->descriptionDonation = $request->input('DonDesc');
+        $donations->emailDonation = $request->input('DonEmail');
+        $donations->phoneDonation = $request->input('DonPhone');
        
         $donations->save();
-        return view('insertdonation');
+        return redirect('/welcome');
     }
 
     public function getAll(){

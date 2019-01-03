@@ -1,0 +1,108 @@
+#kotak1{
+    background-color: darkblue;
+    height: auto;
+}
+
+.btn-primary{
+    font-size: 1vw;
+}
+
+#isi-kotak-1{
+    padding-right: 10%;
+    padding-left: 10%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    /* display: inline-table; */
+}
+#isi-kotak-1  #kiri-kotak-1{
+    float:left;
+    width: 40%;
+}
+#isi-kotak-1  #kanan-kotak-1{
+    float:right;
+    color: #ffffff;
+    width: 60%;
+    font-size: 1vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#kanan-kotak-1 h1{
+    font-size: 3vw;
+}
+#kiri-kotak-1 img{
+    width: 12vw;
+    height: 12vw;
+    margin-bottom: 3%;
+}
+#kotak2{
+    background-color:rgb(28, 133, 98);
+    padding-bottom: 1%;
+    height: auto;
+}
+#isi-kotak-2{
+    padding-right: 15%;
+    padding-left: 15%;
+    padding-top: 1%;
+    overflow:hidden;
+    
+    color: white;
+}
+.what-do-to
+{
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+    font-size: 1vw;
+    text-align: center;
+}
+
+.feature-help-out{
+    width: 35%;
+    height: 20vw;
+}
+#kotak-2-kiri{
+    float: left;
+}
+#kotak-2-kanan{
+    float: right;
+}
+#getting-start{
+    text-align: center;
+    height: auto;
+    padding-top: 5%;
+}
+#isi-kotak-3{
+    padding-right: 10%;
+    padding-left: 20%;
+    padding-bottom: 3%;
+}
+.isi-kotak-3{
+    margin-top: 2%;
+    display: inline-block;
+    width: 40%;
+    height: auto;
+    margin-right: 5%;
+    margin-bottom: 1%;
+}
+#footer{
+    background-color: cadetblue;
+    height: 12vw;
+}
+#isi-semua-footer{
+    padding-right: 15%;
+    padding-left: 15%;
+    padding-top: 1%;
+}
+.isi-footer h3{
+    color: aqua;
+    
+}
+.isi-footer{
+    width: 48%;
+    height: auto;
+    text-align: justify;
+    color: white;
+    font-size: 1vw;
+}
+.isi-footer ul{
+    margin-left: -6%;
+}

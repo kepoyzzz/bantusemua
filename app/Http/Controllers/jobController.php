@@ -21,7 +21,7 @@ class jobController extends Controller
         $jobs->JobPicture = $jpict->getClientOriginalName();
         
         $jobs->save();
-        return view('job');
+        return redirect('/welcome');
     }
 
     public function getAll(){

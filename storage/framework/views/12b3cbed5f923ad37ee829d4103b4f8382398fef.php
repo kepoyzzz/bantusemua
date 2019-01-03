@@ -15,7 +15,7 @@
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="/"><img src="images/bantusemua.png" width="30" height="30" class="d-inline-block align-top" alt="">
+    <a class="navbar-brand" href="/welcome"><img src="images/bantusemua.png" width="30" height="30" class="d-inline-block align-top" alt="">
     Bantusemua.com</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -40,19 +40,20 @@
                     <a class="dropdown-item" href="/insertdonation">Add Donation</a>
                 </div>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
                 <a class="nav-link" href="#">Forum</a>
-            </li>
+            </li> -->
         </ul>
         <ul class="navbar-nav ml-auto">
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Hello, dummy
+                    Hello, <?php echo e((Auth::user->name)); ?>
+
+                         
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="/viewdonation" id="showjob">View Applied Donations</a>
                     <a class="dropdown-item" href="/showjob" id="showjob">View Applied Jobs</a>
-                    <a class="dropdown-item" href="#">Log Out</a>
+                    <a class="dropdown-item" href="/">Log Out</a>
                 </div>
             </li>
         </ul>
@@ -61,5 +62,14 @@
     <main>
         <?php echo $__env->yieldContent('main'); ?>
     </main>
+    
+    <footer class="footer">   
+        <div class="container">
+            <div class="d-flex justify-content-center">
+                <span class="text-muted">2018&copy;Bantusemua.com</span>
+            </div>
+        </div>
+    </footer>
+    
 </body>
 </html>

@@ -2,6 +2,9 @@
 
 use Illuminate\Database\Seeder;
 use Carbon\carbon;
+
+use Faker\Factory as Faker;
+
 class DonateSeeder extends Seeder
 {
     /**
@@ -11,10 +14,13 @@ class DonateSeeder extends Seeder
      */
     public function run()
     {
+        $faker = Faker::create();
         DB::table('donations')->insert([
             'donatePicture' => 'img1.jpg',
             'donateTitle' => 'Peduli Banjir Bima',
             'requesterDonation' => 'Aksi Cepat Tanggap',
+            'emailDonation' => $faker->email,
+            'phoneDonation' => $faker->phoneNumber,
             'totalDonation' => 5000000,
             'targetDonation' => 100000000,
             'donateTime' => '2018/12/31',
@@ -26,7 +32,9 @@ class DonateSeeder extends Seeder
             'donatePicture' => 'img2.jpg',
             'donateTitle' => 'Pembangunan Masjid Nurul Iman',
             'requesterDonation' => 'Yayasan Masjid Nurul Iman',
-            'totalDonation' => 50000000,
+            'emailDonation' => $faker->email,
+            'phoneDonation' => $faker->phoneNumber,
+            'totalDonation' => 5000000,
             'targetDonation' => 350000000,
             'donateTime' => '2019/02/15',
             'descriptionDonation' => 'Pengembangan dan Pembangunan Masjid Nurul Iman',
@@ -37,6 +45,8 @@ class DonateSeeder extends Seeder
             'donatePicture' => 'img3.jpg',
             'donateTitle' => 'Peduli Banjir Garut',
             'requesterDonation' => 'Aksi Cepat Tanggap',
+            'emailDonation' => $faker->email,
+            'phoneDonation' => $faker->phoneNumber,
             'totalDonation' => 60000000,
             'targetDonation' => 1000000000,
             'donateTime' => '2019/05/21',
@@ -48,6 +58,8 @@ class DonateSeeder extends Seeder
             'donatePicture' => 'img4.jpeg',
             'donateTitle' => 'Pray For Banten & Lampung',
             'requesterDonation' => 'CT ARSA FOUNDATION',
+            'emailDonation' => $faker->email,
+            'phoneDonation' => $faker->phoneNumber,
             'totalDonation' => 567000000,
             'targetDonation' => 2000000000,
             'donateTime' => '2019/03/21',
@@ -59,6 +71,8 @@ class DonateSeeder extends Seeder
             'donatePicture' => 'img5.jpg',
             'donateTitle' => 'Donasi Untuk Lombok',
             'requesterDonation' => 'WingkorollsPeduli',
+            'emailDonation' => $faker->email,
+            'phoneDonation' => $faker->phoneNumber,
             'totalDonation' => 234000000,
             'targetDonation' => 1200000000,
             'donateTime' => '2019/02/10',
@@ -70,6 +84,8 @@ class DonateSeeder extends Seeder
             'donatePicture' => 'img6.jpg',
             'donateTitle' => 'Peduli Korban Bencana Palu & Donggala',
             'requesterDonation' => 'OKP GANESPA',
+            'emailDonation' => $faker->email,
+            'phoneDonation' => $faker->phoneNumber,
             'totalDonation' => 400000000,
             'targetDonation' => 800000000,
             'donateTime' => '2019/06/23',
@@ -81,6 +97,8 @@ class DonateSeeder extends Seeder
             'donatePicture' => 'img7.jpg',
             'donateTitle' => 'Donasi Musibah Bencana Alam Gempa & Tsunami di Palu & Donggala Sulawesi Tengah',
             'requesterDonation' => 'Tarbiyah Sunnah Peduli',
+            'emailDonation' => $faker->email,
+            'phoneDonation' => $faker->phoneNumber,
             'totalDonation' => 340000000,
             'targetDonation' => 1200000000,
             'donateTime' => '2019/01/01',
@@ -92,6 +110,8 @@ class DonateSeeder extends Seeder
             'donatePicture' => 'img8.jpg',
             'donateTitle' => 'Peduli Tsunami Selat Sunda',
             'requesterDonation' => 'Yayasan Praktek Psikolog Indonesia',
+            'emailDonation' => $faker->email,
+            'phoneDonation' => $faker->phoneNumber,
             'totalDonation' => 270000000,
             'targetDonation' => 500000000,
             'donateTime' => '2019/07/14',
@@ -103,6 +123,8 @@ class DonateSeeder extends Seeder
             'donatePicture' => 'img9.jpg',
             'donateTitle' => 'Peduli Gempa Aceh',
             'requesterDonation' => 'ACT Indonesia',
+            'emailDonation' => $faker->email,
+            'phoneDonation' => $faker->phoneNumber,
             'totalDonation' => 350000000,
             'targetDonation' => 1000000000,
             'donateTime' => '2019/01/19',
@@ -114,6 +136,8 @@ class DonateSeeder extends Seeder
             'donatePicture' => 'img10.jpg',
             'donateTitle' => 'Save Muslim Rohingya & Bangladesh',
             'requesterDonation' => 'Peduli Muslim',
+            'emailDonation' => $faker->email,
+            'phoneDonation' => $faker->phoneNumber,
             'totalDonation' => 350000000,
             'targetDonation' => 500000000,
             'donateTime' => '2019/02/08',

@@ -90,64 +90,30 @@
             @endif -->
 
             <div class="content">
-                <!-- <form action="{{ URL::to('/register') }}" method="post" enctype="multipart/form-data">
-                    Name: <input type="text" name="name"><br>
+            <form action="{{ URL::to('/login') }}" method="post">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" name="remember" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Remember Me</label>
+                </div>
+                <input type="hidden" name="_token" value="{{csrf_token()}}"> <br>
+                <button type="submit" name="button" class="btn btn-primary">Login</button>
+            </form>
+                <!-- <form action="{{ URL::to('/login') }}" method="post">
                     Email: <input type="text" name="email"><br>
-                    Location: <input type="text" name="location"><br>
-                    Date of Birth: <input type="text" name="dob"><br>
-                    Gender: <input type="text" name="gender"><br>
-                    Phone Number: <input type="text" name="phone"><br>
                     Password: <input type="password" name = "password"> <br>
-                    Profile Picture: <input type = "file" name="userpict"><br>
+                    <input type="checkbox" name="remember"> Remember Me <br><br>
                     <input type="hidden" name="_token" value="{{csrf_token()}}"> <br>
-                    <button type="submit" name="button">Register</button>
+                    <button type="submit" name="button">Login
+                    </button>
                 </form> -->
-                <form action="{{ URL::to('/register') }}" method="post" enctype="multipart/form-data">
-                    <div class="form-group">
-                        <label for="Name">Name</label>
-                        <input type="text" name ="name" class="form-control" id="exampleFormControlInput1">
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email address</label>
-                        <input type="email" name="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-                    </div>
-                    <div class="form-group">
-                        <label for="location">Location</label>
-                        <input type="text" name ="location" class="form-control" id="exampleFormControlInput1">
-                    </div>
-                    <div class="form-group">
-                        <label for="dob">Date Of Birth</label>
-                        <input type="date" name ="dob" class="form-control" id="exampleFormControlInput1">
-                    </div>
-                    <div class="form-group">
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="gender" id="exampleRadios1" value="pria" checked>
-                            <label class="form-check-label" for="pria">
-                                Pria
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="gender" id="exampleRadios2" value="wanita">
-                            <label class="form-check-label" for="wanita">
-                                Wanita
-                            </label>
-                        </div> 
-                    </div>
-                    <div class="form-group">
-                        <label for="phoneNumber">Phone Number</label>
-                        <input type="text" name ="phone" class="form-control" id="exampleFormControlInput1">
-                    </div>
-                    <div class="form-group">
-                        <label for="dob">Password</label>
-                        <input type="text" name ="password" class="form-control" id="exampleFormControlInput1">
-                    </div>
-                    <div class="form-group">
-                        <label for="dob">Profile Picture</label>
-                        <input type = "file" name="userpict" class="form-control-file" id="exampleFormControlFile1">
-                    </div>
-                    <input type="hidden" name="_token" value="{{csrf_token()}}"> <br>
-                    <button type="submit" name="button" class="btn btn-primary">Register</button>
-                </form>
             </div>
     </body>
 </html>
