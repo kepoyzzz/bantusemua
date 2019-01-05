@@ -9,7 +9,7 @@
       <div class="jumbotron jumbotron-fluid">
         <div class="container">
           <h1>Welcome Back,</h1>
-          <h2>Dummy</h2>
+          <h2>{{Session::get('userName')}}</h2>
         </div>
       </div>
     </body>

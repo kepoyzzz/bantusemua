@@ -41,6 +41,22 @@
                   </tr>
                   <tr>
                     <td>
+                      Phone Number: 
+                    </td>
+                    <td>
+                      {{$donations->phoneDonation}}
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Email: 
+                    </td>
+                    <td>
+                      {{$donations->emailDonation}}
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
                       Total Donation : 
                     </td>
                     <td>

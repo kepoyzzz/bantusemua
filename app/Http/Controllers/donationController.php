@@ -18,7 +18,7 @@ class donationController extends Controller
         $donations->donatePicture = $dpict->getClientOriginalName();
         $donations->donateTitle = $request->input('DonateTitle');
         $donations->requesterDonation = $request->input('DonateName');
-        $donations->totalDonation = $request->input('TotalDon')->nullable();
+        $donations->totalDonation = $request->input('TotalDon');
         $donations->targetDonation = $request->input('TargetDon');
         $donations->donateTime = $request->input('DonTime');
         $donations->descriptionDonation = $request->input('DonDesc');
@@ -40,4 +40,11 @@ class donationController extends Controller
             $result->appends($request->only('donateTitle'));
             return view('viewdonation', compact('result'));
      }    
+
+     public function searchingearly(Request $request){
+        $search = $request->get('donateTitle');
+        $result = Donation::where('donateTitle', 'LIKE', '%'.$search.'%')->paginate(12);
+        $result->appends($request->only('donateTitle'));
+        return view('viewdonationearly', compact('result'));
+ } 
 }

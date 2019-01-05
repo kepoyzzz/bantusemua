@@ -5,44 +5,50 @@
     <link rel="stylesheet" type="text/css" href="css/profile.css">
 </head>
 <div class="row">
+@foreach($result as $user)
     <div class="col-sm-3">
-
-        </div>
-        <div class="col-sm-6">
-            <H2>Profile</H2>
-            <div class="table-responsive-sm">
+        <img src="image/{{$user->profilepicture}}" width=50% style="margin-top:30%;margin-left:20%">
+    </div>
+    <div class="col-sm-6" style="margin-bottom:3%;margin-top:3%">
+        <H2>Profile</H2>
+        
+        <div class="table-responsive-sm">
+            
                 <table class="table">
                     <tr>
                         <td>Name : </td>
-                        <td>Auth::user()->name</td>
+                        <td>{{$user->name}}</td>
                     </tr>
                     <tr>
                         <td>Date Of Birth : </td>
-                        <td>test</td>
+                        <td>{{$user->dateofbirth}}</td>
                     </tr>
                     <tr>
                         <td>Location : </td>
-                        <td>test</td>
+                        <td>{{$user->location}}</td>
                     </tr>
                     <tr>
                         <td>Gender : </td>
-                        <td>test</td>
+                        <td>{{$user->gender}}</td>
                     </tr>
                     <tr>
                         <td>Email : </td>
-                        <td>test</td>
+                        <td>{{$user->email}}</td>
                     </tr>
                     <tr>
                         <td>Phone Number : </td>
-                        <td>test</td>
+                        <td>{{$user->phonenumber}}</td>
                     </tr>
                 </table>
-            </div>
-            <button type="button" class="btn btn-dark">Edit Profile</button>
+            @endforeach
         </div>
-        <div class="col-sm-3">
-        
-        </div>
+        <form action="/editProfile" method="GET" class="">
+            <button type="submit" class="btn btn-primary">Edit Profile</button>
+        </form>
+    </div>
+    <div class="col-sm-3">
+    
+    </div>
     </div>
 </div>
 @endsection

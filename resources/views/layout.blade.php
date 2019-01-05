@@ -47,11 +47,12 @@
         <ul class="navbar-nav ml-auto">
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Hello, {{ (Auth::user->name) }}
+                    Hello, {{Session::get('userName')}}
                          
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="/showjob" id="showjob">View Applied Jobs</a>
+                    <a class="dropdown-item" href="/showProfile">View Profile</a>
+                    <a class="dropdown-item" href="/ApplyJob" id="showjob">View Applied Jobs</a>
                     <a class="dropdown-item" href="/">Log Out</a>
                 </div>
             </li>

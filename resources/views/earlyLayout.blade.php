@@ -22,25 +22,12 @@
     </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Job
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="/showjob" id="showjob">View Jobs</a>
-                    </div>
+                <li class="nav-item">
+                    <a class="nav-link" href="/showjobearly" id="showjob">View Jobs</a>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Donations
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="/viewdonation" id="showjob">View Donations</a>
-                    </div>
+                <li class="nav-item">
+                    <a class="nav-link" href="/viewdonationearly" id="showjob">View Donations</a>
                 </li>
-                <!-- <li class="nav-item">
-                    <a class="nav-link" href="#">Forum</a>
-                </li> -->
             </ul>
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">

@@ -42,6 +42,22 @@
                   </tr>
                   <tr>
                     <td>
+                      Email:
+                    </td>
+                    <td>
+                    {{$jobs->JobEmail}}
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Phone Number: 
+                    </td>
+                    <td>
+                    {{$jobs->JobPhone}}
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
                       Location: 
                     </td>
                     <td>
@@ -57,6 +73,7 @@
                     </td>
                   </tr>
                 </table>
+                <a href={{"/addtojobs/".$jobs->id}}><button class = "btn2 btn-primary">Apply Job</button></a>
               </div>
             </div>
           </div>

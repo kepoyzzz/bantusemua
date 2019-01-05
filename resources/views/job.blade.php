@@ -23,6 +23,14 @@
                 <input type="text" class="form-control" name="Jobgiver">
             </div>
             <div class="form-group">
+                <label for="Phone">Phone Number</label> 
+                <input type="text" class="form-control" name="Jobphone">
+            </div>
+            <div class="form-group">
+                <label for="Person In Charge">Email</label> 
+                <input type="text" class="form-control" name="Jobemail">
+            </div>
+            <div class="form-group">
                 <label for="Job Description">Job Description</label>
                 <textarea name="Jobspecification" class="form-control" rows="3"></textarea>
             </div>

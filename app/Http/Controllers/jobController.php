@@ -18,6 +18,8 @@ class jobController extends Controller
         $jobs->JobLocation = $request->input('Joblocation');
         $jobs->JobSpecification = $request->input('Jobspecification');
         $jobs->JobGiver = $request->input('Jobgiver');
+        $jobs->JobEmail = $request->input('Jobemail');
+        $jobs->JobPhone = $request->input('Jobphone');
         $jobs->JobPicture = $jpict->getClientOriginalName();
         
         $jobs->save();
@@ -35,4 +37,11 @@ class jobController extends Controller
             $result->appends($request->only('Jobname'));
             return view('viewjob', compact('result'));
      }    
+
+     public function searchearly(Request $request){
+        $search = $request->get('Jobname');
+        $result = Job::where('Jobname', 'LIKE', '%'.$search.'%')->paginate(12);
+        $result->appends($request->only('Jobname'));
+        return view('viewjobearly', compact('result'));
+ } 
 }
